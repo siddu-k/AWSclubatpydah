@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Register for AWS Student Builder Club at Pydah College of Engineering." />
+  <title>Register - AWS Student Builder Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'aws-orange': '#FF9900',
+            'cloud-blue': '#06b6d4',
+            'text-secondary': '#8b949e'
+          },
+          fontFamily: {
+            'heading': ['Inter', 'sans-serif'],
+            'mono': ['Space Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body style="background-color: #0d1117; color: #c9d1d9;">
+
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ NAVBAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="AWS-Student-Builder-Group-RGB-Program-Icon-Purple.png" alt="AWS Student Builder Group Logo" class="aws-logo-img" />
+        <div class="brand-text">
+          <span class="brand-main">Pydah College of Engineering</span>
+          <span class="brand-sub">AWS Student Builder Group</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="team.html">TEAM</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="register.html" class="nav-cta btn-sharp">JOIN NOW</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ REGISTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <section class="register" id="register" style="padding: 120px 0 80px 0;">
+    <div class="container max-w-4xl mx-auto px-4">
+      <div class="mb-12 text-center">
+        <div class="section-label" style="justify-content: center;">Join the Network</div>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-white">Member Registration</h2>
+        <div class="section-line mt-4 mx-auto"></div>
+        <p class="text-text-secondary font-mono mt-4">Become a part of the cloud revolution at Pydah College.</p>
+      </div>
+      <div class="register-card border border-[rgba(255,255,255,0.05)] shadow-2xl rounded-xl overflow-hidden">
+        <form class="register-form p-8 md:p-12 bg-[#111827]" id="registerForm">
+          <div class="form-grid grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="form-group flex flex-col gap-2">
+              <label for="fullName" class="text-sm font-mono text-text-secondary uppercase">Full Name</label>
+              <input type="text" id="fullName" placeholder="John Doe" class="bg-[#0a0e17] border border-[rgba(255,255,255,0.1)] rounded p-3 text-white focus:border-aws-orange focus:outline-none transition-colors" />
+              <div class="error-msg text-red-500 text-xs mt-1" id="fullNameError"></div>
+            </div>
+            <div class="form-group flex flex-col gap-2">
+              <label for="email" class="text-sm font-mono text-text-secondary uppercase">College Email</label>
+              <input type="email" id="email" placeholder="john@pydah.edu.in" class="bg-[#0a0e17] border border-[rgba(255,255,255,0.1)] rounded p-3 text-white focus:border-aws-orange focus:outline-none transition-colors" />
+              <div class="error-msg text-red-500 text-xs mt-1" id="emailError"></div>
+            </div>
+            <div class="form-group flex flex-col gap-2">
+              <label for="phone" class="text-sm font-mono text-text-secondary uppercase">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+91 98765 43210" class="bg-[#0a0e17] border border-[rgba(255,255,255,0.1)] rounded p-3 text-white focus:border-aws-orange focus:outline-none transition-colors" />
+              <div class="error-msg text-red-500 text-xs mt-1" id="phoneError"></div>
+            </div>
+            <div class="form-group flex flex-col gap-2">
+              <label for="branch" class="text-sm font-mono text-text-secondary uppercase">Branch</label>
+              <select id="branch" class="bg-[#0a0e17] border border-[rgba(255,255,255,0.1)] rounded p-3 text-white focus:border-aws-orange focus:outline-none transition-colors">
+                <option value="">Select your branch</option>
+                <option value="cse">Computer Science (CSE)</option>
+                <option value="it">Information Technology (IT)</option>
+                <option value="ece">Electronics (ECE)</option>
+                <option value="eee">Electrical (EEE)</option>
+                <option value="mech">Mechanical</option>
+                <option value="civil">Civil</option>
+              </select>
+              <div class="error-msg text-red-500 text-xs mt-1" id="branchError"></div>
+            </div>
+            <div class="form-group flex flex-col gap-2">
+              <label for="year" class="text-sm font-mono text-text-secondary uppercase">Year of Study</label>
+              <select id="year" class="bg-[#0a0e17] border border-[rgba(255,255,255,0.1)] rounded p-3 text-white focus:border-aws-orange focus:outline-none transition-colors">
+                <option value="">Select your year</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+              </select>
+              <div class="error-msg text-red-500 text-xs mt-1" id="yearError"></div>
+            </div>
+            <div class="form-group flex flex-col gap-2">
+              <label for="event" class="text-sm font-mono text-text-secondary uppercase">Registration Type</label>
+              <select id="event" class="bg-[#0a0e17] border border-[rgba(255,255,255,0.1)] rounded p-3 text-white focus:border-aws-orange focus:outline-none transition-colors">
+                <option value="">Select option</option>
+                <option value="general">General Membership</option>
+                <option value="hackathon">Serverless Hackathon</option>
+                <option value="workshop">Intro to AWS ML</option>
+              </select>
+              <div class="error-msg text-red-500 text-xs mt-1" id="eventError"></div>
+            </div>
+          </div>
+          <div class="form-group full-width mt-6 flex gap-3 items-start">
+            <input type="checkbox" id="consent" class="mt-1" />
+            <label for="consent" class="text-sm text-text-secondary">I agree to receive updates about club events and resources.</label>
+            <div class="error-msg text-red-500 text-xs mt-1" id="consentError"></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-sharp mt-8 w-full md:w-auto px-8 py-3 font-bold">SUBMIT REGISTRATION</button>
+          <div class="form-success text-green-500 font-bold mt-4 hidden" id="formSuccess">Registration successful! Welcome to the club.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand" style="align-items: flex-start;">
+            <img src="AWS-Student-Builder-Group-RGB-Program-Icon-Purple.png" alt="AWS Student Builder Group Logo" class="aws-logo-img" />
+            <div class="brand-text">
+              <span class="brand-main" style="font-size: 1.1rem; margin-bottom: 4px;">Pydah College of Engineering</span>
+              <span class="brand-sub" style="color: #a855f7; text-transform: none; letter-spacing: 0;">Permanently Affiliated to JNTU Kakinada</span>
+              <span class="brand-sub" style="color: #a855f7; text-transform: none; letter-spacing: 0;">An Autonomous Institution</span>
+            </div>
+          </div>
+          <p style="margin-top: 16px; font-family: var(--mono-font); color: var(--text-muted); font-size: 0.85rem;">Kakinada | Andhra Pradesh | INDIA</p>
+          <div class="footer-socials" style="margin-top: 20px;">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>AWS Resources</h4>
+          <ul>
+            <li><a href="https://aws.amazon.com/education/awseducate/" target="_blank" rel="noopener">AWS Educate</a></li>
+            <li><a href="https://aws.amazon.com/training/" target="_blank" rel="noopener">AWS Training</a></li>
+            <li><a href="https://aws.amazon.com/certification/" target="_blank" rel="noopener">Certifications</a></li>
+            <li><a href="https://aws.amazon.com/free/" target="_blank" rel="noopener">AWS Free Tier</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Pydah College of Engineering,<br />Kakinada, Andhra Pradesh</p>
+          <p><i class="fas fa-envelope"></i> awsclubpydah@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AWS Student Builder Club, Pydah College of Engineering. All rights reserved.</p>
+        <p>Not officially affiliated with Amazon Web Services, Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

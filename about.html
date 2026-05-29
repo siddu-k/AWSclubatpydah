@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About AWS Student Builder Club at Pydah College of Engineering." />
+  <title>About - AWS Student Builder Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'aws-orange': '#FF9900',
+            'cloud-blue': '#06b6d4',
+            'text-secondary': '#8b949e'
+          },
+          fontFamily: {
+            'heading': ['Inter', 'sans-serif'],
+            'mono': ['Space Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body style="background-color: #0d1117; color: #c9d1d9;">
+
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ NAVBAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="AWS-Student-Builder-Group-RGB-Program-Icon-Purple.png" alt="AWS Student Builder Group Logo" class="aws-logo-img" />
+        <div class="brand-text">
+          <span class="brand-main">Pydah College of Engineering</span>
+          <span class="brand-sub">AWS Student Builder Group</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="team.html">TEAM</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="register.html" class="nav-cta btn-sharp">JOIN NOW</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ ABOUT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <section class="about-hero" style="padding: 120px 0 60px 0; background: #0a0e17; text-align: center;">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="section-label" style="justify-content: center;">Who We Are</div>
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">About the AWS Student Builder Group</h1>
+      <p class="text-lg text-text-secondary font-mono leading-relaxed max-w-2xl mx-auto">
+        We are a passionate community of cloud enthusiasts at Pydah College of Engineering, dedicated to learning, building, and innovating with Amazon Web Services.
+      </p>
+    </div>
+  </section>
+
+  <!-- ───────────────── MISSION & VISION ───────────────── -->
+  <section class="mission-vision" style="padding: 60px 0; background: #0d1117;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Mission Card -->
+      <div class="p-8 rounded-xl border border-[rgba(255,255,255,0.05)] bg-[#111827] hover:border-aws-orange transition-colors duration-300">
+        <div class="w-14 h-14 rounded-lg bg-[rgba(255,153,0,0.1)] text-aws-orange flex items-center justify-center text-2xl mb-6">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-4">Our Mission</h3>
+        <p class="text-text-secondary leading-relaxed">
+          To empower students with practical, hands-on cloud computing skills. We bridge the gap between academic theory and industry reality by providing access to AWS resources, expert mentorship, and real-world projects.
+        </p>
+      </div>
+
+      <!-- Vision Card -->
+      <div class="p-8 rounded-xl border border-[rgba(255,255,255,0.05)] bg-[#111827] hover:border-[#06b6d4] transition-colors duration-300">
+        <div class="w-14 h-14 rounded-lg bg-[rgba(6,182,212,0.1)] text-[#06b6d4] flex items-center justify-center text-2xl mb-6">
+          <i class="fas fa-eye"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-4">Our Vision</h3>
+        <p class="text-text-secondary leading-relaxed">
+          To cultivate the next generation of cloud leaders and innovators. We envision a campus where every student has the confidence and technical capability to architect scalable, secure, and modern cloud solutions.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───────────────── WHAT WE DO ───────────────── -->
+  <section class="what-we-do" style="padding: 60px 0 96px 0; background: #0a0e17;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 text-center">
+        <h2 class="text-3xl font-heading font-bold text-white">What We Do</h2>
+        <div class="section-line mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-lg border border-[rgba(255,255,255,0.05)] bg-[#161b22] text-center group">
+          <i class="fas fa-laptop-code text-4xl text-aws-orange mb-4 group-hover:scale-110 transition-transform"></i>
+          <h4 class="text-xl font-bold text-white mb-2">Hands-On Workshops</h4>
+          <p class="text-sm text-text-secondary">Learn AWS services like EC2, S3, and Lambda through interactive, guided labs.</p>
+        </div>
+        <div class="p-6 rounded-lg border border-[rgba(255,255,255,0.05)] bg-[#161b22] text-center group">
+          <i class="fas fa-trophy text-4xl text-[#a855f7] mb-4 group-hover:scale-110 transition-transform"></i>
+          <h4 class="text-xl font-bold text-white mb-2">Hackathons</h4>
+          <p class="text-sm text-text-secondary">Compete in high-energy building challenges to solve real problems using cloud tech.</p>
+        </div>
+        <div class="p-6 rounded-lg border border-[rgba(255,255,255,0.05)] bg-[#161b22] text-center group">
+          <i class="fas fa-certificate text-4xl text-[#22c55e] mb-4 group-hover:scale-110 transition-transform"></i>
+          <h4 class="text-xl font-bold text-white mb-2">Certifications</h4>
+          <p class="text-sm text-text-secondary">Study groups and resources to help you pass AWS Cloud Practitioner and Solutions Architect exams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand" style="align-items: flex-start;">
+            <img src="AWS-Student-Builder-Group-RGB-Program-Icon-Purple.png" alt="AWS Student Builder Group Logo" class="aws-logo-img" />
+            <div class="brand-text">
+              <span class="brand-main" style="font-size: 1.1rem; margin-bottom: 4px;">Pydah College of Engineering</span>
+              <span class="brand-sub" style="color: #a855f7; text-transform: none; letter-spacing: 0;">Permanently Affiliated to JNTU Kakinada</span>
+              <span class="brand-sub" style="color: #a855f7; text-transform: none; letter-spacing: 0;">An Autonomous Institution</span>
+            </div>
+          </div>
+          <p style="margin-top: 16px; font-family: var(--mono-font); color: var(--text-muted); font-size: 0.85rem;">Kakinada | Andhra Pradesh | INDIA</p>
+          <div class="footer-socials" style="margin-top: 20px;">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>AWS Resources</h4>
+          <ul>
+            <li><a href="https://aws.amazon.com/education/awseducate/" target="_blank" rel="noopener">AWS Educate</a></li>
+            <li><a href="https://aws.amazon.com/training/" target="_blank" rel="noopener">AWS Training</a></li>
+            <li><a href="https://aws.amazon.com/certification/" target="_blank" rel="noopener">Certifications</a></li>
+            <li><a href="https://aws.amazon.com/free/" target="_blank" rel="noopener">AWS Free Tier</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Pydah College of Engineering,<br />Kakinada, Andhra Pradesh</p>
+          <p><i class="fas fa-envelope"></i> awsclubpydah@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AWS Student Builder Club, Pydah College of Engineering. All rights reserved.</p>
+        <p>Not officially affiliated with Amazon Web Services, Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

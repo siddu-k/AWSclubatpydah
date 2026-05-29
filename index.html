@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pydah College of Engineering's official AWS Student Builder Club. Join us to learn, build, and innovate with Amazon Web Services." />
+  <meta name="keywords" content="AWS, Cloud, Pydah College, Student Club, Builder Club, Engineering, Hackathon" />
+  <meta property="og:title" content="AWS Student Builder Club ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Pydah College of Engineering" />
+  <meta property="og:description" content="A community of cloud enthusiasts at Pydah College of Engineering, partnered with AWS to empower the next generation of builders." />
+  <meta property="og:type" content="website" />
+  <title>AWS Student Builder Club ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Pydah College of Engineering</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'aws-orange': '#FF9900',
+            'cloud-blue': '#06b6d4',
+            'text-secondary': '#8b949e'
+          },
+          fontFamily: {
+            'heading': ['Inter', 'sans-serif'],
+            'mono': ['Space Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ NAVBAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="AWS-Student-Builder-Group-RGB-Program-Icon-Purple.png" alt="AWS Student Builder Group Logo" class="aws-logo-img" />
+        <div class="brand-text">
+          <span class="brand-main">Pydah College of Engineering</span>
+          <span class="brand-sub">AWS Student Builder Group</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="team.html">TEAM</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="register.html" class="nav-cta btn-sharp">JOIN NOW</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-live-badge">
+          <span class="live-dot"></span> LIVE <span class="live-text">NOW ACCEPTING NEW MEMBERS</span>
+        </div>
+        <h1 class="hero-title terminal-title">
+          AWS Student<br />
+          Builder Group <span style="color: #a855f7;">at</span><br />
+          <span class="highlight-orange" style="font-size: clamp(2.5rem, 6vw, 4rem);">Pydah College of Engineering</span>
+        </h1>
+        <hr class="hero-divider" />
+
+        <div class="hero-actions terminal-actions">
+          <a href="#register" class="btn btn-primary btn-sharp">JOIN THE GROUP</a>
+          <a href="#events" class="btn btn-outline btn-sharp">EXPLORE EVENTS</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="aws-blocks-visual">
+          <div class="aws-row">
+            <div class="aws-block empty"></div>
+            <div class="aws-block orange float-1"><i class="fas fa-server"></i></div>
+            <div class="aws-block empty"></div>
+            <div class="aws-block purple float-2"><i class="fas fa-network-wired"></i></div>
+            <div class="aws-block empty"></div>
+          </div>
+          <div class="aws-row">
+            <div class="aws-block empty"></div>
+            <div class="aws-block float-3"><i class="fab fa-aws"></i></div>
+            <div class="aws-block cyan float-1"><i class="fas fa-database"></i></div>
+            <div class="aws-block empty"></div>
+            <div class="aws-block empty"></div>
+          </div>
+          <div class="aws-row">
+            <div class="aws-block green float-2"><i class="fas fa-shield-alt"></i></div>
+            <div class="aws-block empty"></div>
+            <div class="aws-block float-1"><i class="fas fa-cloud"></i></div>
+            <div class="aws-block orange float-3"><i class="fas fa-microchip"></i></div>
+            <div class="aws-block empty"></div>
+          </div>
+          <div class="aws-row">
+            <div class="aws-block empty"></div>
+            <div class="aws-block purple float-2"><i class="fas fa-project-diagram"></i></div>
+            <div class="aws-block empty"></div>
+            <div class="aws-block float-1"><i class="fas fa-lock"></i></div>
+            <div class="aws-block cyan float-2"><i class="fas fa-chart-bar"></i></div>
+          </div>
+          <div class="aws-row">
+            <div class="aws-block empty"></div>
+            <div class="aws-block empty"></div>
+            <div class="aws-block orange float-3"><i class="fas fa-bolt"></i></div>
+            <div class="aws-block empty"></div>
+            <div class="aws-block green float-1"><i class="fas fa-leaf"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ TICKER & STATS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <div class="ticker-wrapper">
+    <div class="ticker-content">
+      <span><span class="dot green"></span> DynamoDB</span>
+      <span><span class="dot orange"></span> EC2</span>
+      <span><span class="dot purple"></span> CloudFormation</span>
+      <span><span class="dot pink"></span> Rekognition</span>
+      <span><span class="dot blue"></span> AWS Amplify</span>
+      <span><span class="dot orange"></span> API Gateway</span>
+      <span><span class="dot green"></span> IoT Core</span>
+      <span><span class="dot purple"></span> AWS CDK</span>
+      <span><span class="dot blue"></span> Cognito</span>
+      <span><span class="dot orange"></span> CloudWatch</span>
+      <span><span class="dot yellow"></span> AWS Lambda</span>
+      <span><span class="dot blue"></span> Amazon S3</span>
+      <!-- Duplicate for infinite scroll -->
+      <span><span class="dot green"></span> DynamoDB</span>
+      <span><span class="dot orange"></span> EC2</span>
+      <span><span class="dot purple"></span> CloudFormation</span>
+      <span><span class="dot pink"></span> Rekognition</span>
+      <span><span class="dot blue"></span> AWS Amplify</span>
+      <span><span class="dot orange"></span> API Gateway</span>
+      <span><span class="dot green"></span> IoT Core</span>
+      <span><span class="dot purple"></span> AWS CDK</span>
+      <span><span class="dot blue"></span> Cognito</span>
+      <span><span class="dot orange"></span> CloudWatch</span>
+      <span><span class="dot yellow"></span> AWS Lambda</span>
+      <span><span class="dot blue"></span> Amazon S3</span>
+    </div>
+  </div>
+
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ TEAM â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ GALLERY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ ABOUT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <section class="about" id="about" style="padding: 96px 0; background: #0a0e17; border-top: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden;">
+    <!-- Abstract background elements -->
+    <div style="position: absolute; top: -50%; left: -10%; width: 50%; height: 100%; background: radial-gradient(circle, rgba(255,153,0,0.05) 0%, transparent 70%); pointer-events: none;"></div>
+    <div style="position: absolute; bottom: -20%; right: -10%; width: 40%; height: 80%; background: radial-gradient(circle, rgba(6,182,212,0.05) 0%, transparent 70%); pointer-events: none;"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        
+        <!-- Left: AWS Style Visual (Terminal + Floating Blocks) -->
+                <!-- Left: AWS Architecture Node Graph -->
+        <div class="about-visual" style="position: relative; min-height: 460px;">
+          <style>
+            @keyframes flowDash { to { stroke-dashoffset: -48; } }
+            @keyframes glowPulse { 0%,100%{opacity:1;} 50%{opacity:0.6;} }
+            @keyframes floatNode { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-5px);} }
+            .arch-svg-wrap { width:100%; height:460px; display:block; }
+            .flow-line { animation: flowDash 2s linear infinite; }
+            .flow-line-slow { animation: flowDash 3s linear infinite; }
+            .flow-line-fast { animation: flowDash 1.3s linear infinite; }
+            /* node card style */
+            .svc-node {
+              position: absolute;
+              background: rgba(13,17,23,0.95);
+              border-radius: 10px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+              padding: 11px 10px 9px;
+              cursor: default;
+              transition: transform 0.3s, box-shadow 0.3s;
+              z-index: 2;
+            }
+            .svc-node:hover { transform: translateY(-4px) scale(1.04); }
+            .svc-node .ni { font-size: 1.35rem; line-height: 1; }
+            .svc-node .nl { font-family:'Space Mono',monospace; font-size:0.58rem; font-weight:700; white-space:nowrap; margin-top:2px; }
+            .svc-node .ns { font-family:'Space Mono',monospace; font-size:0.46rem; color:#6b7280; white-space:nowrap; }
+            .svc-n-orange { border:1px solid rgba(255,153,0,0.55);  box-shadow:0 0 16px rgba(255,153,0,0.18);  }
+            .svc-n-cyan   { border:1px solid rgba(6,182,212,0.55);  box-shadow:0 0 16px rgba(6,182,212,0.18);  }
+            .svc-n-purple { border:1px solid rgba(168,85,247,0.55); box-shadow:0 0 16px rgba(168,85,247,0.18); }
+            .svc-n-green  { border:1px solid rgba(34,197,94,0.55);  box-shadow:0 0 16px rgba(34,197,94,0.18);  }
+            .svc-n-pink   { border:1px solid rgba(236,72,153,0.55); box-shadow:0 0 16px rgba(236,72,153,0.18); }
+            .svc-n-blue   { border:1px solid rgba(59,130,246,0.55); box-shadow:0 0 16px rgba(59,130,246,0.18); }
+            .svc-n-yellow { border:1px solid rgba(234,179,8,0.55);  box-shadow:0 0 16px rgba(234,179,8,0.18);  }
+            .about-visual { overflow: visible !important; }
+          </style>
+
+          <!-- SVG LINES LAYER (behind nodes) -->
+          <svg viewBox="0 0 480 460" style="position:absolute;top:0;left:0;width:100%;height:460px;z-index:1;overflow:visible;" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="ma-o" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#ff9900"/></marker>
+              <marker id="ma-c" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#06b6d4"/></marker>
+              <marker id="ma-p" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#a855f7"/></marker>
+              <marker id="ma-g" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#22c55e"/></marker>
+              <marker id="ma-pk" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#ec4899"/></marker>
+              <marker id="ma-b" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#3b82f6"/></marker>
+              <marker id="ma-y" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L0,5 L5,2.5 z" fill="#eab308"/></marker>
+            </defs>
+
+            <!--
+              Node centers (for reference):
+              Users      : (96, 38)
+              Route53    : (384, 50)
+              CloudFront : (240, 120)
+              WAF        : (60, 210)
+              APIGateway : (390, 205)
+              Cognito    : (200, 310)
+              Lambda     : (370, 315)
+              DynamoDB   : (80, 400)
+              S3         : (290, 415)
+              CloudWatch : (430, 400)
+            -->
+
+            <!-- Users -> CloudFront (curved down-right) -->
+            <path d="M130,48 C180,48 200,95 205,108" stroke="rgba(6,182,212,0.7)" stroke-width="1.5" stroke-dasharray="7,5" fill="none" marker-end="url(#ma-c)" class="flow-line"/>
+
+            <!-- Route53 -> CloudFront -->
+            <path d="M360,60 C320,60 290,95 275,108" stroke="rgba(255,153,0,0.7)" stroke-width="1.5" stroke-dasharray="7,5" fill="none" marker-end="url(#ma-o)" class="flow-line-slow"/>
+
+            <!-- CloudFront -> WAF (curved down-left) -->
+            <path d="M210,132 C160,145 100,165 75,198" stroke="rgba(236,72,153,0.7)" stroke-width="1.5" stroke-dasharray="7,5" fill="none" marker-end="url(#ma-pk)" class="flow-line"/>
+
+            <!-- CloudFront -> API Gateway (curved down-right) -->
+            <path d="M270,132 C320,145 365,165 375,193" stroke="rgba(255,153,0,0.7)" stroke-width="1.5" stroke-dasharray="7,5" fill="none" marker-end="url(#ma-o)" class="flow-line-fast"/>
+
+            <!-- WAF -> Cognito -->
+            <path d="M90,225 C110,260 155,285 170,298" stroke="rgba(168,85,247,0.6)" stroke-width="1.5" stroke-dasharray="7,5" fill="none" marker-end="url(#ma-p)" class="flow-line-slow"/>
+
+            <!-- API Gateway -> Lambda -->
+            <path d="M380,225 C378,262 374,292 372,303" stroke="rgba(255,153,0,0.6)" stroke-width="1.5" stroke-dasharray="7,5" fill="none" marker-end="url(#ma-o)" class="flow-line"/>
+
+            <!-- Cognito -> DynamoDB -->
+            <path d="M180,328 C150,355 110,375 95,389" stroke="rgba(34,197,94,0.7)" stroke-width="1.5" stroke-dasharray="7,5" fill="none" marker-end="url(#ma-g)" class="flow-line-fast"/>
+
+            <!-- Lambda -> S3 -->
+            <path d="M355,330 C335,358 315,388 308,404" stroke="rgba(59,130,246,0.7)" stroke-width="1.5" stroke-dasharray="7,5" fill="none" marker-end="url(#ma-b)" class="flow-line-slow"/>
+
+            <!-- Lambda -> CloudWatch -->
+            <path d="M400,330 C415,355 425,375 428,389" stroke="rgba(234,179,8,0.7)" stroke-width="1.5" stroke-dasharray="7,5" fill="none" marker-end="url(#ma-y)" class="flow-line"/>
+
+            <!-- Cognito <-> Lambda (horizontal link) -->
+            <path d="M240,315 C280,313 330,314 352,314" stroke="rgba(168,85,247,0.35)" stroke-width="1" stroke-dasharray="4,6" fill="none" class="flow-line-slow"/>
+          </svg>
+
+          <!-- NODES (scattered, non-overlapping) -->
+
+          <!-- Users: top-left -->
+          <div class="svc-node svc-n-cyan" style="width:82px;top:12px;left:50px;">
+            <span class="ni" style="color:#06b6d4;"><i class="fas fa-users"></i></span>
+            <span class="nl" style="color:#06b6d4;">Users</span>
+            <span class="ns">Web / Mobile</span>
+          </div>
+
+          <!-- Route 53: top-right -->
+          <div class="svc-node svc-n-orange" style="width:82px;top:18px;right:36px;">
+            <span class="ni" style="color:#ff9900;"><i class="fas fa-route"></i></span>
+            <span class="nl" style="color:#ff9900;">Route 53</span>
+            <span class="ns">DNS Routing</span>
+          </div>
+
+          <!-- CloudFront: center-top -->
+          <div class="svc-node svc-n-orange" style="width:98px;top:95px;left:calc(50% - 49px);">
+            <span class="ni" style="color:#ff9900;"><i class="fas fa-globe"></i></span>
+            <span class="nl" style="color:#ff9900;">CloudFront</span>
+            <span class="ns">CDN &amp; Edge</span>
+          </div>
+
+          <!-- WAF: middle-left -->
+          <div class="svc-node svc-n-pink" style="width:80px;top:188px;left:16px;">
+            <span class="ni" style="color:#ec4899;"><i class="fas fa-shield-alt"></i></span>
+            <span class="nl" style="color:#ec4899;">AWS WAF</span>
+            <span class="ns">Security</span>
+          </div>
+
+          <!-- API Gateway: middle-right -->
+          <div class="svc-node svc-n-orange" style="width:94px;top:183px;right:18px;">
+            <span class="ni" style="color:#ff9900;"><i class="fas fa-network-wired"></i></span>
+            <span class="nl" style="color:#ff9900;">API Gateway</span>
+            <span class="ns">REST / HTTP</span>
+          </div>
+
+          <!-- Cognito: lower-left-center -->
+          <div class="svc-node svc-n-purple" style="width:86px;top:290px;left:142px;">
+            <span class="ni" style="color:#a855f7;"><i class="fas fa-user-lock"></i></span>
+            <span class="nl" style="color:#a855f7;">Cognito</span>
+            <span class="ns">Auth &amp; Users</span>
+          </div>
+
+          <!-- Lambda: lower-right-center -->
+          <div class="svc-node svc-n-purple" style="width:88px;top:288px;right:56px;">
+            <span class="ni" style="color:#a855f7;"><i class="fas fa-bolt"></i></span>
+            <span class="nl" style="color:#a855f7;">Lambda</span>
+            <span class="ns">Serverless Fn</span>
+          </div>
+
+          <!-- DynamoDB: bottom-left -->
+          <div class="svc-node svc-n-green" style="width:90px;top:378px;left:30px;">
+            <span class="ni" style="color:#22c55e;"><i class="fas fa-database"></i></span>
+            <span class="nl" style="color:#22c55e;">DynamoDB</span>
+            <span class="ns">NoSQL DB</span>
+          </div>
+
+          <!-- S3: bottom-center -->
+          <div class="svc-node svc-n-blue" style="width:80px;top:393px;left:calc(50% - 10px);">
+            <span class="ni" style="color:#3b82f6;"><i class="fas fa-archive"></i></span>
+            <span class="nl" style="color:#3b82f6;">Amazon S3</span>
+            <span class="ns">Object Store</span>
+          </div>
+
+          <!-- CloudWatch: bottom-right -->
+          <div class="svc-node svc-n-yellow" style="width:88px;top:378px;right:18px;">
+            <span class="ni" style="color:#eab308;"><i class="fas fa-chart-line"></i></span>
+            <span class="nl" style="color:#eab308;">CloudWatch</span>
+            <span class="ns">Monitoring</span>
+          </div>
+
+        </div>
+        <!-- Right: Content -->
+        <div class="about-content">
+          <div class="section-label" style="color: #ff9900; font-family: var(--mono-font, 'Space Mono', monospace); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px;">Who We Are</div>
+          <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mt-2 mb-6">Building the Future of Cloud at Pydah</h2>
+          <p class="text-text-secondary mb-6 text-lg" style="line-height: 1.7;">
+            The AWS Student Builder Group at Pydah College of Engineering is a premier technical community dedicated to advancing cloud computing knowledge among students. We bridge the gap between academic learning and industry requirements.
+          </p>
+          <p class="text-text-secondary mb-8 text-lg" style="line-height: 1.7;">
+            Through hands-on workshops, hackathons, and real-world projects, we prepare our members to become certified AWS professionals and innovative cloud architects ready for the modern tech landscape.
+          </p>
+          
+          
+
+          <a href="about.html" class="btn btn-primary btn-sharp inline-flex items-center gap-2" style="background: #ff9900; color: #1e2a3a; padding: 12px 24px; font-weight: bold; border-radius: 4px; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
+            LEARN MORE ABOUT US <i class="fas fa-arrow-right text-sm"></i>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ─────────────── EXPLORE ─────────────── -->
+  <section id="events" style="padding: 80px 0; background: #0d1117;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Events Box -->
+        <a href="events.html" style="display:block;text-decoration:none;" class="group">
+          <div style="background: linear-gradient(135deg, #111827 0%, #0d1117 100%); border: 1px solid rgba(255,153,0,0.25); border-radius: 14px; padding: 48px 40px; height: 100%; display:flex; flex-direction:column; justify-content:space-between; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 50px rgba(255,153,0,0.12)';this.style.borderColor='rgba(255,153,0,0.5)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';this.style.borderColor='rgba(255,153,0,0.25)';">
+            <div>
+              <div style="width:56px;height:56px;background:rgba(255,153,0,0.12);border:1px solid rgba(255,153,0,0.35);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#ff9900;font-size:1.6rem;margin-bottom:24px;"><i class="fas fa-calendar-alt"></i></div>
+              <div style="font-family:'Space Mono',monospace;font-size:0.65rem;color:#ff9900;text-transform:uppercase;letter-spacing:0.12em;font-weight:700;margin-bottom:10px;">Activities</div>
+              <h2 style="font-family:Inter,sans-serif;font-size:1.8rem;font-weight:800;color:#fff;margin-bottom:14px;line-height:1.2;">Events &amp;<br>Hackathons</h2>
+              <p style="font-family:'Space Mono',monospace;font-size:0.75rem;color:#8b949e;line-height:1.7;">Workshops, hackathons, and certification prep sessions. Stay updated on all our activities.</p>
+            </div>
+            <div style="margin-top:32px;display:inline-flex;align-items:center;gap:8px;font-family:'Space Mono',monospace;font-size:0.7rem;font-weight:700;color:#ff9900;text-transform:uppercase;letter-spacing:0.08em;">
+              View All Events <i class="fas fa-arrow-right" style="font-size:0.65rem;"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Gallery Box -->
+        <a href="gallery.html" style="display:block;text-decoration:none;" class="group">
+          <div style="background: linear-gradient(135deg, #111827 0%, #0d1117 100%); border: 1px solid rgba(168,85,247,0.25); border-radius: 14px; padding: 48px 40px; height: 100%; display:flex; flex-direction:column; justify-content:space-between; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 50px rgba(168,85,247,0.12)';this.style.borderColor='rgba(168,85,247,0.5)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';this.style.borderColor='rgba(168,85,247,0.25)';">
+            <div>
+              <div style="width:56px;height:56px;background:rgba(168,85,247,0.12);border:1px solid rgba(168,85,247,0.35);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#a855f7;font-size:1.6rem;margin-bottom:24px;"><i class="fas fa-images"></i></div>
+              <div style="font-family:'Space Mono',monospace;font-size:0.65rem;color:#a855f7;text-transform:uppercase;letter-spacing:0.12em;font-weight:700;margin-bottom:10px;">Moments</div>
+              <h2 style="font-family:Inter,sans-serif;font-size:1.8rem;font-weight:800;color:#fff;margin-bottom:14px;line-height:1.2;">Event<br>Gallery</h2>
+              <p style="font-family:'Space Mono',monospace;font-size:0.75rem;color:#8b949e;line-height:1.7;">Captured moments from our workshops, meetups, and hackathons. Relive the experience.</p>
+            </div>
+            <div style="margin-top:32px;display:inline-flex;align-items:center;gap:8px;font-family:'Space Mono',monospace;font-size:0.7rem;font-weight:700;color:#a855f7;text-transform:uppercase;letter-spacing:0.08em;">
+              View Gallery <i class="fas fa-arrow-right" style="font-size:0.65rem;"></i>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand" style="align-items: flex-start;">
+            <img src="AWS-Student-Builder-Group-RGB-Program-Icon-Purple.png" alt="AWS Student Builder Group Logo" class="aws-logo-img" />
+            <div class="brand-text">
+              <span class="brand-main" style="font-size: 1.1rem; margin-bottom: 4px;">Pydah College of Engineering</span>
+              <span class="brand-sub" style="color: #a855f7; text-transform: none; letter-spacing: 0;">Permanently Affiliated to JNTU Kakinada</span>
+              <span class="brand-sub" style="color: #a855f7; text-transform: none; letter-spacing: 0;">An Autonomous Institution</span>
+            </div>
+          </div>
+          <p style="margin-top: 16px; font-family: var(--mono-font); color: var(--text-muted); font-size: 0.85rem;">Kakinada | Andhra Pradesh | INDIA</p>
+          <div class="footer-socials" style="margin-top: 20px;">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>AWS Resources</h4>
+          <ul>
+            <li><a href="https://aws.amazon.com/education/awseducate/" target="_blank" rel="noopener">AWS Educate</a></li>
+            <li><a href="https://aws.amazon.com/training/" target="_blank" rel="noopener">AWS Training</a></li>
+            <li><a href="https://aws.amazon.com/certification/" target="_blank" rel="noopener">Certifications</a></li>
+            <li><a href="https://aws.amazon.com/free/" target="_blank" rel="noopener">AWS Free Tier</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Pydah College of Engineering,<br />Kakinada, Andhra Pradesh</p>
+          <p><i class="fas fa-envelope"></i> awsclubpydah@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AWS Student Builder Club, Pydah College of Engineering. All rights reserved.</p>
+        <p>Not officially affiliated with Amazon Web Services, Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
