@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -44,7 +44,7 @@
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="events.html">EVENTS</a></li>
-        <li><a href="team.html">TEAM</a></li>
+        <!-- <li><a href="team.html">TEAM</a></li> -->
         <li><a href="gallery.html">GALLERY</a></li>
         <li><a href="register.html" class="nav-cta btn-sharp">JOIN NOW</a></li>
       </ul>
@@ -121,9 +121,16 @@
             <label for="consent" class="text-sm text-text-secondary">I agree to receive updates about club events and resources.</label>
             <div class="error-msg text-red-500 text-xs mt-1" id="consentError"></div>
           </div>
-          <button type="submit" class="btn btn-primary btn-sharp mt-8 w-full md:w-auto px-8 py-3 font-bold">SUBMIT REGISTRATION</button>
-          <div class="form-success text-green-500 font-bold mt-4 hidden" id="formSuccess">Registration successful! Welcome to the club.</div>
+          <button type="submit" id="submitBtn" class="btn btn-primary btn-sharp mt-8 w-full md:w-auto px-8 py-3 font-bold">SUBMIT REGISTRATION</button>
         </form>
+        <div class="form-success text-center py-12 px-6 bg-[#111827]" id="formSuccess">
+          <i class="fas fa-check-circle text-5xl text-green-500 mb-4 block"></i>
+          <h3 class="text-2xl font-bold text-white mb-2">Registration Successful!</h3>
+          <p class="text-text-secondary mb-6">Welcome to the AWS Student Builder Group at Pydah College of Engineering.</p>
+          <a href="https://chat.whatsapp.com/LPwNyIFFea84MP0lNZ8qKP" target="_blank" class="btn inline-flex items-center gap-2" style="background: #25D366; color: #fff; font-weight: bold; padding: 12px 24px; border-radius: 2px; text-transform: uppercase; font-family: var(--mono-font); font-size: 0.85rem; letter-spacing: 1px;">
+            <i class="fab fa-whatsapp text-lg"></i> JOIN OUR WHATSAPP GROUP
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -143,10 +150,7 @@
           </div>
           <p style="margin-top: 16px; font-family: var(--mono-font); color: var(--text-muted); font-size: 0.85rem;">Kakinada | Andhra Pradesh | INDIA</p>
           <div class="footer-socials" style="margin-top: 20px;">
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/sbcpydah/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
         <div class="footer-links">
@@ -155,7 +159,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="events.html">Events</a></li>
-            <li><a href="team.html">Team</a></li>
+            <!-- <li><a href="team.html">Team</a></li> -->
             <li><a href="register.html">Register</a></li>
           </ul>
         </div>
@@ -172,7 +176,7 @@
           <h4>Contact Us</h4>
           <p><i class="fas fa-map-marker-alt"></i> Pydah College of Engineering,<br />Kakinada, Andhra Pradesh</p>
           <p><i class="fas fa-envelope"></i> awsclubpydah@gmail.com</p>
-          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+
         </div>
       </div>
       <div class="footer-bottom">
