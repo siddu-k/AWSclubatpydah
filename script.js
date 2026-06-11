@@ -159,22 +159,27 @@ function validateForm() {
   const el = document.getElementById(id);
   if (el) el.addEventListener('input', () => clearError(id));
 });
-document.getElementById('consent').addEventListener('change', () => clearError('consent'));
+const consentEl = document.getElementById('consent');
+if (consentEl) {
+  consentEl.addEventListener('change', () => clearError('consent'));
+}
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (!validateForm()) return;
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!validateForm()) return;
 
-  const btn = document.getElementById('submitBtn');
-  btn.disabled = true;
-  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
 
-  /* Simulate async submission */
-  setTimeout(() => {
-    form.style.display = 'none';
-    formSuccess.classList.add('visible');
-  }, 1400);
-});
+    /* Simulate async submission */
+    setTimeout(() => {
+      form.style.display = 'none';
+      formSuccess.classList.add('visible');
+    }, 1400);
+  });
+}
 
 function resetForm() {
   form.reset();
